@@ -1,6 +1,6 @@
 {
   "name": "sepby",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Re-arrange elements of array by condition.",
   "main": "sepby.js",
   "support": "sepby.support.js",
@@ -28,11 +28,11 @@
   },
   "homepage": "https://github.com/volkovasystems/sepby#readme",
   "dependencies": {
-    "arkount": "^0.6.0",
+    "apiqe": "^0.0.0",
     "babel-runtime": "^6.23.0",
-    "budge": "^0.23.0",
-    "leveld": "^0.2.0",
-    "wichevr": "^0.8.0",
+    "budge": "^0.25.0",
+    "leveld": "^0.3.0",
+    "wichevr": "^0.9.0",
     "xtrak": "^0.0.0"
   },
   "devDependencies": {

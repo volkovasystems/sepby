@@ -1,6 +1,6 @@
 yarn add \
 babel-runtime \
-arkount \
+apiqe \
 budge \
 leveld \
 xtrak \
@@ -15,7 +15,7 @@ source-map-loader \
 webpack \
 --dev && \
 bower install \
-arkount \
+apiqe \
 budge \
 leveld \
 xtrak \

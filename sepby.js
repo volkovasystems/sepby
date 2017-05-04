@@ -43,11 +43,13 @@
 
 	@module-documentation:
 		Re-arrange elements of array by condition.
+
+		Remaining elements will be pushed at the back.
 	@end-module-documentation
 
 	@include:
 		{
-			"arkount": "arkount",
+			"apiqe": "apiqe",
 			"budge": "budge",
 			"leveld": "leveld",
 			"xtrak": "xtrak",
@@ -56,7 +58,7 @@
 	@end-include
 */
 
-const arkount = require( "arkount" );
+const apiqe = require( "apiqe" );
 const budge = require( "budge" );
 const leveld = require( "leveld" );
 const xtrak = require( "xtrak" );
@@ -86,14 +88,13 @@ const sepby = function sepby( array, condition ){
 		@end-meta-configuration
 	*/
 
-	if( arkount( arguments ) < 2 ){
+	if( arguments.length < 2 ){
 		return wichevr( array, [ ] );
 	}
 
 	try{
-		return leveld( leveld( budge( arguments ) )
-			.map( ( condition ) => xtrak( array, condition ) )
-			.concat( array ) );
+		return apiqe( leveld( leveld( budge( arguments ) )
+			.map( ( condition ) => xtrak( array, condition ) ) ), array );
 
 	}catch( error ){
 		throw new Error( `cannot separate array, ${ error.stack }` );
