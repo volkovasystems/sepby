@@ -34,6 +34,9 @@
 			"file": "sepby.js",
 			"module": "sepby",
 			"author": "Richeve S. Bebedor",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"eMail": "richeve.bebedor@gmail.com",
 			"repository": "https://github.com/volkovasystems/sepby.git",
 			"test": "sepby-test.js",
