@@ -1,8 +1,8 @@
 yarn add \
 babel-runtime \
 apiqe \
-budge \
 leveld \
+shft \
 xtrak \
 wichevr \
 --save && \
@@ -16,8 +16,8 @@ webpack \
 --dev && \
 bower install \
 apiqe \
-budge \
 leveld \
+shft \
 xtrak \
 wichevr \
 --save \
