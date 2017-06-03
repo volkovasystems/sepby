@@ -53,8 +53,8 @@
               	@include:
               		{
               			"apiqe": "apiqe",
-              			"budge": "budge",
               			"leveld": "leveld",
+              			"shft": "shft",
               			"xtrak": "xtrak",
               			"wichevr": "wichevr"
               		}
@@ -62,8 +62,8 @@
               */
 
 var apiqe = require("apiqe");
-var budge = require("budge");
 var leveld = require("leveld");
+var shft = require("shft");
 var xtrak = require("xtrak");
 var wichevr = require("wichevr");
 
@@ -96,7 +96,7 @@ var sepby = function sepby(array, condition) {
 	}
 
 	try {
-		return apiqe(leveld(leveld(budge(arguments)).
+		return apiqe(leveld(leveld(shft(arguments)).
 		map(function (condition) {return xtrak(array, condition);})), array);
 
 	} catch (error) {
