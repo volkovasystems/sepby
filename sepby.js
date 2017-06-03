@@ -53,8 +53,8 @@
 	@include:
 		{
 			"apiqe": "apiqe",
-			"budge": "budge",
 			"leveld": "leveld",
+			"shft": "shft",
 			"xtrak": "xtrak",
 			"wichevr": "wichevr"
 		}
@@ -62,8 +62,8 @@
 */
 
 const apiqe = require( "apiqe" );
-const budge = require( "budge" );
 const leveld = require( "leveld" );
+const shft = require( "shft" );
 const xtrak = require( "xtrak" );
 const wichevr = require( "wichevr" );
 
@@ -96,7 +96,7 @@ const sepby = function sepby( array, condition ){
 	}
 
 	try{
-		return apiqe( leveld( leveld( budge( arguments ) )
+		return apiqe( leveld( leveld( shft( arguments ) )
 			.map( ( condition ) => xtrak( array, condition ) ) ), array );
 
 	}catch( error ){
