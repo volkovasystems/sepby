@@ -1,6 +1,6 @@
 {
   "name": "sepby",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Re-arrange elements of array by condition.",
   "main": "sepby.js",
   "support": "sepby.support.js",
@@ -23,7 +23,8 @@
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
   "contributors": [
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "bugs": {
@@ -31,16 +32,16 @@
   },
   "homepage": "https://github.com/volkovasystems/sepby#readme",
   "dependencies": {
-    "apiqe": "^0.1.0",
+    "apiqe": "^0.3.0",
     "babel-runtime": "^6.23.0",
-    "leveld": "^0.4.0",
-    "shft": "^0.1.0",
-    "wichevr": "^0.9.0",
-    "xtrak": "^0.4.0"
+    "leveld": "^0.5.0",
+    "shft": "^0.2.0",
+    "wichevr": "^0.10.0",
+    "xtrak": "^0.5.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "babel-core": "^6.24.1",
+    "babel-core": "^6.25.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "source-map-loader": "^0.2.1",
