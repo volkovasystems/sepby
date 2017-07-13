@@ -34,11 +34,11 @@
               			"file": "sepby.js",
               			"module": "sepby",
               			"author": "Richeve S. Bebedor",
+              			"eMail": "richeve.bebedor@gmail.com",
               			"contributors": [
               				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
               				"Vinse Vinalon <vinsevinalon@gmail.com>"
               			],
-              			"eMail": "richeve.bebedor@gmail.com",
               			"repository": "https://github.com/volkovasystems/sepby.git",
               			"test": "sepby-test.js",
               			"global": true
