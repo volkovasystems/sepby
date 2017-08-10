@@ -1,50 +1,53 @@
 {
-  "name": "sepby",
-  "version": "0.7.0",
-  "description": "Re-arrange elements of array by condition.",
-  "main": "sepby.js",
-  "support": "sepby.support.js",
-  "deploy": "sepby.deploy.js",
-  "browser": "sepby.deploy.js",
-  "scripts": {
-    "build": "babel sepby.js --out-file sepby.support.js --source-maps && webpack --progress --display-modules",
-    "test": "mocha sepby-test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/volkovasystems/sepby.git"
-  },
-  "keywords": [
-    "re-arrange",
-    "element",
-    "array",
-    "condition",
-    "sepby"
-  ],
-  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-  "contributors": [
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/volkovasystems/sepby/issues"
-  },
-  "homepage": "https://github.com/volkovasystems/sepby#readme",
-  "dependencies": {
-    "apiqe": "^0.5.0",
-    "babel-runtime": "^6.23.0",
-    "leveld": "^0.7.0",
-    "shft": "^0.4.0",
-    "wichevr": "^0.13.0",
-    "xtrak": "^0.6.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-latest": "^6.24.1",
-    "source-map-loader": "^0.2.1",
-    "webpack": "^3.2.0"
-  }
+	"name": "sepby",
+	"version": "0.8.0",
+	"description": "Re-arrange elements of array by condition.",
+	"main": "sepby.js",
+	"support": "sepby.support.js",
+	"deploy": "sepby.deploy.js",
+	"browser": "sepby.deploy.js",
+	"scripts": {
+		"pristine": "rsetmod clean && flxc execute ./.install.sh",
+		"clear": "rsetmod clean --clear",
+		"build": "babel sepby.js --out-file sepby.support.js --source-maps && webpack --progress --display-modules",
+		"pretest": "npm run clear && npm run build",
+		"test": "node sepby-test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/volkovasystems/sepby.git"
+	},
+	"keywords": [
+		"re-arrange",
+		"element",
+		"array",
+		"condition",
+		"sepby"
+	],
+	"author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+	"contributors": [
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/volkovasystems/sepby/issues"
+	},
+	"homepage": "https://github.com/volkovasystems/sepby#readme",
+	"dependencies": {
+		"apiqe": "^0.7.0",
+		"babel-runtime": "^6.25.0",
+		"leveld": "^0.8.0",
+		"shft": "^0.5.0",
+		"wichevr": "^0.14.0",
+		"xtrak": "^0.7.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-core": "^6.25.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-latest": "^6.24.1",
+		"source-map-loader": "^0.2.1",
+		"webpack": "^3.5.2"
+	}
 }
