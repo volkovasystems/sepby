@@ -1,16 +1,32 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-09-11T17:58:29.335Z",
-    "end": "2017-09-11T17:58:29.336Z",
-    "duration": 1
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-09-12T06:24:50.874Z",
+		"end": "2017-09-12T06:24:50.896Z",
+		"duration": 22
+	},
+	"tests": [
+		{
+			"title": "should be equal to [ 1, 2, 3, 5, 6, 'hello', 'world', true, false ]",
+			"fullTitle": "sepby `sepby( [ 'hello', 'world', 1, 2, 3, true, false, 5, 6 ], NUMBER )` should be equal to [ 1, 2, 3, 5, 6, 'hello', 'world', true, false ]",
+			"duration": 16,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to [ 1, 2, 3, 5, 6, 'hello', 'world', true, false ]",
+			"fullTitle": "sepby `sepby( [ 'hello', 'world', 1, 2, 3, true, false, 5, 6 ], NUMBER )` should be equal to [ 1, 2, 3, 5, 6, 'hello', 'world', true, false ]",
+			"duration": 16,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

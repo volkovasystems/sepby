@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-09-12T06:24:52.159Z",
+	"end": "2017-09-12T06:25:30.258Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "sepby",
+			"duration": 0,
+			"start": "2017-09-12T06:25:29.928Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "sepby",
+			"duration": 146,
+			"start": "2017-09-12T06:25:29.928Z",
+			"end": "2017-09-12T06:25:30.074Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-09-12T06:25:29.930Z",
+					"end": "2017-09-12T06:25:29.930Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "sepby",
+					"associatedTest": "should be equal to [ 1, 2, 3, 5, 6, 'hello', 'world', true, false ]"
+				},
+				{
+					"start": "2017-09-12T06:25:30.073Z",
+					"end": "2017-09-12T06:25:30.073Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "sepby",
+					"associatedTest": "should be equal to [ 1, 2, 3, 5, 6, 'hello', 'world', true, false ]"
+				},
+				{
+					"start": "2017-09-12T06:25:30.074Z",
+					"end": "2017-09-12T06:25:30.074Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "sepby"
+				}
+			]
+		},
+		{
+			"name": "`sepby( [ 'hello', 'world', 1, 2, 3, true, false, 5, 6 ], NUMBER )`",
+			"duration": 145,
+			"start": "2017-09-12T06:25:29.929Z",
+			"end": "2017-09-12T06:25:30.074Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 1, 2, 3, 5, 6, 'hello', 'world', true, false ]",
+					"start": "2017-09-12T06:25:29.930Z",
+					"end": "2017-09-12T06:25:30.073Z",
+					"duration": 143,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

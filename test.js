@@ -51,7 +51,7 @@
 	@end-include
 */
 
-const assert = require( "should" );
+const assert = require( "should/as-function" );
 
 //: @server:
 const sepby = require( "./sepby.js" );
@@ -63,11 +63,18 @@ const sepby = require( "./sepby.js" );
 
 
 //: @server:
-
 describe( "sepby", ( ) => {
 
-} );
+	describe( "`sepby( [ 'hello', 'world', 1, 2, 3, true, false, 5, 6 ], NUMBER )`", ( ) => {
+		it( "should be equal to [ 1, 2, 3, 5, 6, 'hello', 'world', true, false ]", ( ) => {
 
+			assert.deepEqual( sepby( [ "hello", "world", 1, 2, 3, true, false, 5, 6 ], NUMBER ),
+				[ 1, 2, 3, 5, 6, "hello", "world", true, false ] );
+
+		} );
+	} );
+
+} );
 //: @end-server
 
 
