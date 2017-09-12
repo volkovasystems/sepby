@@ -51,7 +51,7 @@
 	@end-include
 */
 
-const assert = require( "should" );
+const assert = require( "should/as-function" );
 
 //: @server:
 const sepby = require( "./sepby.js" );
@@ -67,27 +67,57 @@ const path = require( "path" );
 
 
 //: @server:
-
 describe( "sepby", ( ) => {
 
-} );
+	describe( "`sepby( [ 'hello', 'world', 1, 2, 3, true, false, 5, 6 ], NUMBER )`", ( ) => {
+		it( "should be equal to [ 1, 2, 3, 5, 6, 'hello', 'world', true, false ]", ( ) => {
 
+			assert.deepEqual( sepby( [ "hello", "world", 1, 2, 3, true, false, 5, 6 ], NUMBER ),
+				[ 1, 2, 3, 5, 6, "hello", "world", true, false ] );
+
+		} );
+	} );
+
+} );
 //: @end-server
 
 
 //: @client:
-
 describe( "sepby", ( ) => {
 
-} );
+	describe( "`sepby( [ 'hello', 'world', 1, 2, 3, true, false, 5, 6 ], NUMBER )`", ( ) => {
+		it( "should be equal to [ 1, 2, 3, 5, 6, 'hello', 'world', true, false ]", ( ) => {
 
+			assert.deepEqual( sepby( [ "hello", "world", 1, 2, 3, true, false, 5, 6 ], NUMBER ),
+				[ 1, 2, 3, 5, 6, "hello", "world", true, false ] );
+
+		} );
+	} );
+
+} );
 //: @end-client
 
 
 //: @bridge:
-
 describe( "sepby", ( ) => {
 
-} );
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
+	describe( "`sepby( [ 'hello', 'world', 1, 2, 3, true, false, 5, 6 ], NUMBER )`", ( ) => {
+		it( "should be equal to [ 1, 2, 3, 5, 6, 'hello', 'world', true, false ]", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( sepby( [ "hello", "world", 1, 2, 3, true, false, 5, 6 ], NUMBER ) );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.deepEqual( JSON.parse( result ), [ 1, 2, 3, 5, 6, "hello", "world", true, false ] );
+		} );
+	} );
+
+} );
 //: @end-bridge
